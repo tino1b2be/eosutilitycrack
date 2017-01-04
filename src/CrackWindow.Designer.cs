@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace EOSUtilityCrack
 {
-    partial class Form1
+    partial class CrackForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrackForm));
             this.crack_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.eoslink = new System.Windows.Forms.LinkLabel();
@@ -70,7 +70,7 @@
             // 
             // logo
             // 
-            this.logo.Image = global::WindowsFormsApplication1.Properties.Resources.logo22;
+            this.logo.Image = global::EOSUtilityCrack.Properties.Resources.logo22;
             this.logo.Location = new System.Drawing.Point(117, 142);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(124, 50);

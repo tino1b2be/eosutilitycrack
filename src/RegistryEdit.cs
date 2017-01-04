@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApplication1.src
+namespace EOSUtilityCrack.src
 {
     class RegistryEdit
     {
@@ -20,6 +20,10 @@ namespace WindowsFormsApplication1.src
                 localMachineKey = Registry.LocalMachine.CreateSubKey(@"SOFTWARE\\WOW6432Node\\Canon\\EOS Utility");
 
                 // check to see if the key exists
+                if (!canonKeyExists())
+                {
+                    
+                }
 
             }
             catch (Exception ex)
@@ -27,6 +31,11 @@ namespace WindowsFormsApplication1.src
                 // Error occured.
                 throw ex;
             }
+        }
+
+        private static bool canonKeyExists()
+        {
+            return true;
         }
     }
 }
