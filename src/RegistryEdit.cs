@@ -22,7 +22,8 @@ namespace EOSUtilityCrack.src
                 // check to see if the key exists
                 if (!canonKeyExists())
                 {
-                    
+                    // TODO : key craetion was not sucessful. Throw an error! (show a pop up saying cracking failed)
+                    // throw new Exception("Registry Key creation failed.");
                 }
 
             }
@@ -32,9 +33,10 @@ namespace EOSUtilityCrack.src
                 throw ex;
             }
         }
-
+        
         private static bool canonKeyExists()
         {
+            // TODO Check if the relevant keys were added to the registry.
             return true;
         }
     }
